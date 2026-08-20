@@ -1,0 +1,89 @@
+<!-- 
+    Crie um único arquivo HTML chamado projeto_suporte.html. 
+
+    Instruções: 
+    
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de pedido de suporte técnico</title>
+</head>
+<body>
+    <!-- Crie um título <h1> para a página: "Sistema de Pedido de Suporte Técnico". -->
+    <h1>Sistema de pedido de suporte técnico</h1>
+    <ul>
+        <!-- Tabela de Conteúdo (Lista): 
+            Crie uma Lista Não Ordenada "Instruções", "Dados do Cliente" e "Detalhes do Problema". -->
+        <li>Instruções</li>
+        <li>Dados do Cliente</li>
+        <li>Detalhes do Problema</li>
+    </ul>
+
+    <form action="">
+        <!-- 
+        Crie um único formulário (<form>) para todo o pedido. -->
+
+        <!-- Seção: Dados do Cliente (Inputs Simples): 
+                Campo Nome Completo, Campo E-mail Campo Telefone. -->
+        <h2>Dados do cliente</h2>
+
+        <label for="">Nome:</label>
+            <br>
+            <input type="text" id="nome_do_cliente">
+        <br><br>
+
+        <label for="">Email:</label>
+            <br>
+            <input type="text" id="email_do_cliente">
+        <br><br>
+
+        <label for="">Telefone:</label>
+            <br>
+            <input type="text" id="telefone_do_cliente">
+        <br><br>
+
+        <!-- Seção: Detalhes do Problema (Seleção e Texto Longo): 
+                Tipo de Problema (Seleção Única): 
+                    "Hardware (Componente Físico)", 
+                    "Software (Programa)" ,
+                    "Rede (Conexão)". 
+        -->
+        <h2>Tipo de Problema:</h2>
+        <input type="radio" id="Hardware" name="option" value="Hardware" checked>
+            <label cli for="Hardware">Hardware (Componente Físico)</label>
+        <br><br>
+
+        <input type="radio" id="Software" name="option" value="Software">
+            <label for="Software">Software (Programa)</label>
+        <br><br>
+
+        <input type="radio" id="Rede" name="option" value="Rede">
+            <label for="Rede">Rede (Conexão)</label>
+        <br><br>
+        
+        <!-- Urgência (Lista Suspensa):
+                    cliente escolha o nível de urgência: "Baixa", "Média" ou "Alta".  -->
+        <h2>Urgência</h2>
+            <select>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+        <br><br>
+
+        <!--Descrição do Problema (Texto Longo): 
+            Use <textarea> para a descrição detalhada (mínimo 5 linhas).  -->
+        <label for="descricao_problema">Descreva o problema:</label><br>
+        <textarea name="descricao_problema" id="descricao_problema" style="width: 20rem; height: 10rem;"></textarea>
+        <br><br>
+        <input type="submit" name="envio" id="envio">
+        
+
+    </form>
+    
+</body>
+</html>
