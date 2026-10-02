@@ -1,0 +1,86 @@
+body {
+    background-color: azure;
+    position: relative;
+
+}
+
+.cab-titulo {
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(200deg, #ea4ce0, #000000);
+    color: #ea4ce0;
+    border-radius: 20px;
+
+
+}
+
+.titulo-principa {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.formulario {
+    margin: 16px 16px;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+
+    border-radius: 16px;
+    background-color: #ea4ce0;
+
+    & input {
+        background-color: #efd9ee;
+        border-radius: 10px;
+        border-style: none;
+        padding: 16px;
+
+        display: flex;
+        gap: 10px;
+    }
+
+    & label {
+        padding: 16px;
+        display: flex;
+        gap: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 32px;
+    }
+
+    & button {
+        background-color: #efd9ee;
+        border-radius: 10px;
+        border-style: none;
+        padding: 16px;
+
+        display: flex;
+        position: absolute;
+        top: 520px;
+        
+        gap: 10px;
+
+        & button:hover{
+            background-color: #000000;
+        }
+    }
+}
+
+.rodape {
+    margin: 16px 16px;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+
+    border-radius: 16px;
+    background-color: #efd9ee;
+
+}
